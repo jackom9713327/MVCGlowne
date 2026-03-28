@@ -6,7 +6,6 @@ from django.utils import timezone
 
 from .models import Choice, Question
 
-
 def index(request):
     latest_question_list = Question.objects.filter(
         pub_date__lte=timezone.now()

@@ -1,8 +1,36 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Strona główna";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center py-5">
+    <h1 class="display-4 fw-bold">Cyfrowa Biblioteka</h1>
+    <p class="lead text-muted mb-4">
+        System do zarządzania zbiorem książek. Dodawaj, przeglądaj, edytuj i wyszukuj pozycje w swojej kolekcji.
+    </p>
+    <a asp-controller="Books" asp-action="Index" class="btn btn-primary btn-lg">
+        Przejdź do listy książek
+    </a>
+</div>
+
+<div class="row text-center mt-5">
+    <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Zarządzanie zbiorem</h5>
+                <p class="card-text text-muted">
+                    Dodawaj nowe książki oraz edytuj i usuwaj istniejące pozycje w prosty sposób.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Wyszukiwanie</h5>
+                <p class="card-text text-muted">
+                    Szybko odnajdź książkę po tytule lub autorze, niezależnie od wielkości liter.
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
